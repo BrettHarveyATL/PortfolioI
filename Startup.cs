@@ -34,6 +34,7 @@ namespace Portfolio
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }

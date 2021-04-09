@@ -5,21 +5,21 @@ namespace Portfolio.Controllers
     public class PortfolioController : Controller
     {
         [HttpGet("")]
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is Index!";
+            return View();
         }
 
         [HttpGet("projects")]
-        public string Project()
+        public IActionResult Projects()
         {
-            return "These are my projects";
+            return View();
         }
 
         [HttpGet("contact")]
-        public string Contact()
+        public IActionResult Contact()
         {
-            return "This is my contact";
+            return View();
         }
     }
 }
